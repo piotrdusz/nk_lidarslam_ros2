@@ -4,9 +4,9 @@ scan_matcher:
     robot_frame_id: "base_link"
     registration_method: "NDT"
     ndt_resolution: 1.0
-    ndt_num_threads: 2
+    ndt_num_threads: 16
     gicp_corr_dist_threshold: 5.0
-    trans_for_mapupdate: 0.5
+    trans_for_mapupdate: 0.1
     vg_size_for_input: 0.1
     vg_size_for_map: 0.05
     use_min_max_filter: true

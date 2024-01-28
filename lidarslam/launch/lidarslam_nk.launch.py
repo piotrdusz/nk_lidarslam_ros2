@@ -35,7 +35,7 @@ def generate_launch_description():
         arguments=[
             '--frame-id', 'base_link',
             '--child-frame-id', 'laser_link',
-            '--roll', '0.13',
+            '--roll', '0.08',
             '--yaw', '-1.57079632679'
             ]
         )
