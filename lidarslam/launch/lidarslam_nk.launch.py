@@ -41,12 +41,12 @@ def generate_launch_description():
         )
 
 
-    graphbasedslam = launch_ros.actions.Node(
-        package='graph_based_slam',
-        executable='graph_based_slam_node',
-        parameters=[main_param_dir],
-        output='screen'
-        )
+    #graphbasedslam = launch_ros.actions.Node(
+    #    package='graph_based_slam',
+    #    executable='graph_based_slam_node',
+    #    parameters=[main_param_dir],
+    #    output='screen'
+    #    )
     
     rviz = launch_ros.actions.Node(
         package='rviz2',
@@ -62,6 +62,6 @@ def generate_launch_description():
             description='Full path to main parameter file to load'),
         mapping,
         tf,
-        graphbasedslam,
+        #graphbasedslam,
         rviz,
             ])
